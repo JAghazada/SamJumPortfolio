@@ -1,0 +1,46 @@
+/* navbar */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 57px;
+}
+
+nav {
+  height: 51px;
+  width: 479px;
+}
+
+.nav-item {
+  line-height: 22px;
+  font-size: 20px;
+  color: #fff;
+  opacity: 60%;
+  height: 22px;
+  cursor: pointer;
+}
+
+.active.nav-item {
+  opacity: 100%;
+}
+.active.nav-item::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+ul#menu {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1242px) {
+  header {
+    display: none;
+  }
+}

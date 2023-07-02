@@ -1,0 +1,39 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+* {
+  font-family: "SF Pro Display", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --mainBgColor: #2d2d2d;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: var(--mainBgColor);
+}
+.container {
+  max-width: 1242px;
+  margin: 0 auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.header-text {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 32px;
+  line-height: 100%;
+}
+@media only screen and (max-width: 1272px) {
+  .header-text {
+    font-size: 22px;
+  }
+  .container {
+    width: 301px;
+    margin: 0 auto;
+  }
+}

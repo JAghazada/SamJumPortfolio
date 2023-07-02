@@ -1,0 +1,108 @@
+.contact-wrapper {
+  margin-top: 323px;
+}
+.contact-container {
+  margin-top: 119px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-inputs > input {
+  border: none;
+  background: transparent;
+  outline: 0;
+  border-bottom: #fff 1px solid;
+  height: 28px;
+  color: #fff;
+  font-size: 22px;
+}
+.contact-inputs > input::placeholder {
+  color: rgba(255, 255, 255, 0.41);
+  font-size: 20px;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: 0.044px;
+}
+
+#name-inp,
+#surname-inp {
+  width: 114px;
+}
+
+#email-inp,
+#phone-inp {
+  width: 213px;
+}
+
+#surname-inp,
+#phone-inp {
+  margin-top: 64px;
+}
+
+#message-inp {
+  width: 576px;
+}
+
+.send-message-btn {
+  display: inline-flex;
+  padding: 15px 42px;
+  align-items: center;
+  gap: 28px;
+  border-radius: 11px;
+  border: 1px solid #fff;
+  opacity: 0.699999988079071;
+  margin-top: 64px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.073px;
+  background-color: transparent;
+  cursor: pointer;
+  width: 176px;
+  height: 52px;
+  transition: 0.5s ease;
+}
+.send-message-btn:hover {
+  opacity: 0.699999988079071;
+  background: #fff;
+  color: #2d2d2d;
+  transition: 0.5s ease;
+}
+@media only screen and (max-width: 1272px) {
+  .contact-container {
+    flex-direction: column;
+    margin-top: 92px;
+  }
+  .contact-wrapper {
+    margin-top: 265px;
+  }
+  .contact-inputs:first-child {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #name-inp,
+  #surname-inp {
+    width: 144.5px;
+  }
+  #surname-inp,
+  #phone-inp {
+    margin-top: 0px;
+  }
+
+  #message-inp {
+    width: auto;
+  }
+  #email-inp,
+  #phone-inp,
+  #message-inp {
+    margin-top: 82px;
+    width: 304px;
+  }
+  .send-message-btn {
+    margin: 60px auto;
+  }
+}

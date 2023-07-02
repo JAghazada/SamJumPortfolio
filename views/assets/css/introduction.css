@@ -1,0 +1,77 @@
+.introduction-main-text {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+#name {
+  font-size: 64px;
+}
+.description {
+  color: rgba(211, 211, 211, 0.87);
+  font-size: 24px;
+  line-height: 120%;
+  display: flex;
+  width: 537px;
+  flex-direction: column;
+}
+.introduction-texts {
+  width: 651px;
+}
+.say-hi-btn {
+  border-radius: 12px;
+  background: #767676;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 13px 24px;
+}
+.discover-works-btn {
+  border-radius: 12px;
+  border: 1.2px solid #fff;
+  padding: 13px 16px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 16px;
+  line-height: 22px;
+}
+.mt-24 {
+  margin-top: 24px;
+}
+.introduction-wrapper {
+  margin-top: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1242px) {
+  .introduction-texts {
+    width: 301px;
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  .introduction-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .description {
+    width: 300px;
+    font-size: 12px;
+  }
+  .introduction-main-text {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+  #name {
+    font-size: 30px;
+    width: 319px;
+    display: inline-block;
+  }
+  .introduction-wrapper {
+    margin-top: 15px;
+  }
+  .m-24 {
+    margin-top: 14px;
+  }
+}
