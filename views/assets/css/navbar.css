@@ -39,8 +39,63 @@ ul#menu {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 1242px) {
+@media screen and (max-width: 1272px) {
   header {
     display: none;
   }
+}
+
+/* !hamburger menu */
+.side-bar-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  position: sticky;
+  justify-content: end;
+  align-items: center;
+  border-radius: 999px;
+  top: 66px;
+  z-index: 2;
+  transform: translateX(-50%);
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.997) 50%
+  );
+  transition: 250ms ease;
+}
+.side-bar-icon > img {
+  margin-right: 20%;
+  width: 12px;
+}
+.side-bar-icon-active {
+  transform: translateX(82px);
+  transition: 250ms ease;
+}
+.side-bar-img-active {
+  transform: rotate(180deg);
+}
+#side-menu {
+  transform: translateX(-100%);
+  transition: 250ms ease;
+  position: absolute;
+  top: 66px;
+  background-color: #fff;
+  width: 122px;
+  height: 208px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#side-menu > li {
+  text-align: center;
+  font-size: 12px;
+}
+
+.side-bar-active {
+  transform: translateX(0%) !important;
+  transition: 250ms ease;
 }

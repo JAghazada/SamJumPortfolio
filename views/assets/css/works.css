@@ -7,14 +7,13 @@
 .header-work > div > img,
 .footer-work > div > img {
   height: 444px;
-  width: 100%;
 }
 .inner-left-works > div > img {
   height: 898.72px;
   width: 1149px;
 }
 .inner-right-works > div > img {
-  height: 594.45px;
+  width: 594.45px;
 }
 .inner-works {
   width: 100%;
@@ -113,6 +112,9 @@
 .fa-arrow-right {
   padding-left: 4px;
 }
+@media only screen and (min-width: 1909px) {
+}
+
 @media only screen and (max-width: 1272px) {
   .inner-works {
     flex-direction: column;
