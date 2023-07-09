@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamJum || Portfolio</title>
+    <link rel="stylesheet" href="/css/_base.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/introduction.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/works.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+</head>
+
+<body>
+    <!-- ! include card modal -->
+    <%- include('partials/card.ejs') %>
+
+        <!-- ! header start -->
+        <!-- ? side-navbar -->
+        <div class="side-bar-icon">
+            <img src="/icons/navbar-icon.svg" alt="navbar-icon">
+        </div>
+        <div class="side-bar">
+            <ul id="side-menu">
+                <li class="#main-side active">Main</li>
+                <li class="#about-side">About</li>
+                <li class="#works-side">Works</li>
+                <li class="#contact-side">Contact</li>
+            </ul>
+        </div>
+        <header>
+            <nav>
+                <ul id="menu">
+                    <li class="nav-item #main active">Main</li>
+                    <li class="nav-item #about">About</li>
+                    <li class="nav-item #works">Works</li>
+                    <li class="nav-item #contact">Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <!-- ! header end -->
+
+        <!-- ! introduction start -->
+        <section class="introduction-wrapper container" id="main">
+            <div class="introduction-texts">
+                <div class="introduction-main-text ">
+                    <span>Hello, I am</span> <br>
+                    <span id="name">Samir Jumshudzada</span>
+                </div>
+                <div class="description mt-24">
+                    <%=pageData.texts.motto%> <img src="/icons/smile.svg" class="smile-icon" alt="smile icon">
+                </div>
+                <div class="introduction-btns mt-24">
+                    <button class="btn say-hi-btn">
+                        Say Hi 👋
+                    </button>
+                    <button class="btn discover-works-btn">
+                        Discover my works <i class="fa-solid fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="introduction-img">
+                <img id="samjumphoto" src="/images/SamJumCoolBest.png" alt="samjum photo">
+            </div>
+        </section>
+        <!-- !introduction end -->
+
+
+        <!-- !About start -->
+        <section id="about">
+            <div class="about-wrapper container">
+                <div class="header-text">
+                    <%=pageData.sectionHeaders.about_section%>
+                        <ul id="about">
+                            <li class="about-item ab-item-1">Started my first journey at a university start-up as UX
+                                designer at
+                                the
+                                beginning
+                                of 2021 <img src="/icons/icon1.svg" alt="icon"></li>
+                            <li class="about-item ab-item-2">Led the design team of a winner start-up at the same
+                                year<img src="/icons/icon2.svg" alt="icon"></li>
+                            <li class="about-item ab-item-3">Got my degree in UX/UI design at 2022. Finished all 7 steps
+                                of
+                                Google’s
+                                UX design
+                                course at 2023<img src="/icons/icon3.svg" alt="icon"></li>
+                            <li class="about-item ab-item-4">Won several contests about UX/UI design<img
+                                    src="/icons/icon4.svg" alt="icon"></li>
+                            <li class="about-item ab-item-5">During this time, got different freelance UX and UI jobs
+                                from
+                                different
+                                companies
+                                <img src="/icons/icon5.svg" alt="icon">
+                            </li>
+                        </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- !About end -->
+        <!-- !Works start -->
+        <div class="works-wrapper">
+            <section class="header-text container" id="works">
+                <%=pageData.sectionHeaders.work_section%>
+            </section>
+            <div class="works-img-container">
+                <div class="header-img">
+                    <button class="view-details-btn">View Details</button>
+                    <img src="/images/projects/project-1.png" alt="project-image">
+
+                </div>
+                <div class="inner-imgs">
+                    <div class="left-imgs">
+                        <div>
+                            <button class="view-details-btn">View Details</button>
+                            <img src="/images/projects/project-3.png" alt="project-image">
+                        </div>
+                        <div>
+                            <button class="view-details-btn">View Details</button>
+                            <img src="/images/projects/project-2.png" alt="project-image">
+                        </div>
+                    </div>
+                    <div class="right-imgs">
+                        <div>
+                            <button class="view-details-btn">View Details</button>
+                            <img src="/images/projects/project-4.png" alt="project-image">
+                        </div>
+                        <div>
+                            <button class="view-details-btn">View Details</button>
+                            <img src="/images/projects/project-5.png" alt="project-image">
+                        </div>
+                        <div>
+                            <button class="view-details-btn">View Details</button>
+                            <img src="/images/projects/project-6.png" alt="project-image">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-img">
+                    <button class="view-details-btn">View Details</button>
+                    <img src="/images/projects/project-7.png" alt="project-image">
+
+                </div>
+            </div>
+        </div>
+        <!-- !Works end  -->
+        <!-- !Contact start  -->
+        <section class="contact-wrapper container" id="contact">
+            <div class="header-text">
+                <%=pageData.sectionHeaders.contact_section%>
+            </div>
+            <div class="contact-container">
+                <div class="contact-inputs">
+                    <input type="text" placeholder="name" id="name-inp">
+                    <input type="text" placeholder="surname" id="surname-inp">
+                </div>
+                <div class="contact-inputs">
+                    <input type="text" placeholder="Email" id="email-inp">
+                    <input type="text" placeholder="Phone Number" id="phone-inp">
+
+                </div>
+                <div class="contact-inputs">
+                    <input type="text" placeholder="Message..." id="message-inp">
+                    <button class="send-message-btn">
+                        Send <i class="fa-regular fa-share-from-square"></i>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- !Contact end -->
+        <!-- !footer start -->
+        <footer class="container">
+            <div class="footer-tags">
+                <div class="footer-tag">
+                    <div class="footer-header">
+                        <%=pageData.footerHeaders.footer_works%>
+                            <ul id="footer-menu">
+                                <li class="footer-item"><a href="<%=pageData.social_links.behance%>">Behance</a></li>
+                                <li class="footer-item"><a href="<%=pageData.social_links.drible%>">Drible</a></li>
+                                <li class="footer-item"><a href="<%=pageData.social_links.pinterest%>">Pinterest</a>
+                                </li>
+                            </ul>
+                    </div>
+
+
+                </div>
+                <div class="footer-tag" id="social-links">
+                    <div class="footer-header">
+                        <%=pageData.footerHeaders.footer_social%>
+                            <ul id="footer-menu">
+                                <li class="footer-item"><a href="<%=pageData.social_links.instagram%>">Instagram</a>
+                                </li>
+                                <li class="footer-item"><a href="<%=pageData.social_links.linkedin%>">Linkedin</a></li>
+                                <li class="footer-item"><a href="<%=pageData.social_links.facebook%>">Facebook</a></li>
+                                <li class="footer-item"><a href="<%=pageData.social_links.twitter%>">Twitter</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="footer-tag">
+                    <div class="footer-header">
+                        <%=pageData.footerHeaders.footer_contact%>
+                            <ul id="footer-menu">
+                                <li class="footer-item"><i class="fa-regular fa-envelope"></i>
+                                    <%=pageData.social_links.gmail%>
+                                </li>
+                                <li class="footer-item"><i class="fa-solid fa-phone-volume"></i>
+                                    <%=pageData.social_links.phone%>
+                                </li>
+                                <li class="footer-item">
+                                    <%=pageData.texts.contact_text%>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- !footer end -->
+        <div class="copyright container">
+            ©2023 Samir Jumshudzada. All Rights Reserved.
+        </div>
+
+
+        <!-- ? font awesome script -->
+        <script src="https://kit.fontawesome.com/46a0505f50.js" crossorigin="anonymous"></script>
+        <!-- ? My Scripts -->
+        <script src="/js/scripts/changeImg.js"></script>
+        <script src="/js/scripts/side-bar.js"></script>
+        <script src="/js/scripts/nav-scroll.js"></script>
+
+</body>
+
+</html>

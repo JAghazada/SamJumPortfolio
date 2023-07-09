@@ -1,0 +1,36 @@
+{
+  "name": "samjumportfolio",
+  "version": "1.0.0",
+  "description": "Portfolio For Samir Jumshudzada",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JAghazada/SamJumPortfolio.git"
+  },
+  "keywords": [
+    "samjum",
+    "portfolio",
+    "samjumfuckin190"
+  ],
+  "author": "Jamil Aghazada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JAghazada/SamJumPortfolio/issues"
+  },
+  "homepage": "https://github.com/JAghazada/SamJumPortfolio#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7",
+    "uuid": "^9.0.0"
+  }
+}

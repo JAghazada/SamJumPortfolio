@@ -1,142 +1,110 @@
-.works-wrapper {
+#works {
   margin-top: 369px;
 }
-.works-container {
-  margin-top: 88px;
-}
-.header-work > div > img,
-.footer-work > div > img {
-  height: 444px;
-}
-.inner-left-works > div > img {
-  height: 898.72px;
-  width: 1149px;
-}
-.inner-right-works > div > img {
-  width: 594.45px;
-}
-.inner-works {
+.header-img,
+.footer-img {
   width: 100%;
-  display: flex;
-}
-.project-img {
-  cursor: pointer;
-  display: block;
+  overflow: hidden;
   position: relative;
-  transition: 0.25s ease;
 }
-.explore-btn {
-  top: calc(50% - 32px);
-  position: absolute;
-  cursor: pointer;
-  left: calc(50% - 113px);
-  display: flex;
-  width: 226px;
-  height: 65px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 18px;
-  border: 2px solid #fff;
-  color: #fff;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0.073px;
-  background-color: transparent;
-  opacity: 0;
-  transition: 0.5s ease;
-}
-.project-img::after {
-  position: absolute;
+.header-img::after,
+.footer-img::after,
+.left-imgs > div::after,
+.right-imgs > div::after {
   content: "";
+  display: block;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  display: flex;
-  transition: 0.5s ease;
+  width: 100%;
+  height: 100%;
+  transition: 500ms ease-in-out;
 }
-.project-img:hover::after {
-  background-color: #00000074;
-}
-.project-img:hover > .explore-btn {
-  opacity: 1;
-  z-index: 2;
+.header-img:hover:after,
+.footer-img:hover::after,
+.right-imgs > div:hover::after,
+.left-imgs > div:hover::after {
+  background-color: #0000008d;
+  transition: 500ms ease-in-out;
 }
 
-.explore-btn:hover {
+.header-img:hover > .view-details-btn,
+.footer-img:hover > .view-details-btn,
+.left-imgs > div:hover > .view-details-btn,
+.right-imgs > div:hover > .view-details-btn {
+  opacity: 1;
+  transition: 500ms ease-in-out;
+}
+.view-details-btn:hover {
   background-color: #fff;
   color: #000;
-  transition: 0.5s ease;
-  font-weight: 500;
-  line-height: 22px;
-  font-size: 17px;
+  transition: 500ms ease-in-out;
 }
-.show-more-btn {
-  color: #fff;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0.073px;
-  display: flex;
+.view-details-btn {
+  opacity: 0;
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+  position: absolute;
+  left: calc(50% - 113px);
+  top: calc(50% - 33px);
   width: 226px;
   height: 65px;
-  padding: 22px 53px 21px 53px;
-  justify-content: center;
-  align-items: center;
   border-radius: 18px;
   border: 2px solid #fff;
   background-color: transparent;
-  opacity: 0.699999988079071;
-  transition: 0.5s ease;
-
-  cursor: pointer;
-  margin: 44px auto;
+  padding: 22px 63px;
+  color: #fff;
+  font-size: 17px;
+  line-height: 22px;
+  z-index: 3;
 }
-.show-more-btn:hover {
+.header-img > img,
+.footer-img > img {
+  object-fit: cover;
+  width: 100%;
+}
+.inner-imgs {
   display: flex;
-  width: 226px;
-  height: 65px;
-  padding: 22px 52px 21px 52px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 18px;
-  border: 2px solid #fff;
-  opacity: 0.699999988079071;
-  background: #fff;
-  transition: 0.5s ease;
-  color: #000;
 }
-.fa-arrow-right {
-  padding-left: 4px;
+.left-imgs > div,
+.right-imgs > div {
+  display: flex;
+  flex-direction: column;
 }
-@media only screen and (min-width: 1909px) {
+.left-imgs {
+  width: 60%;
+  background-color: green;
+}
+.right-imgs {
+  width: 40%;
+  background-color: blue;
+}
+/* img {
+  object-fit: contain;
+} */
+.works-img-container {
+  margin-top: 88px;
 }
 
-@media only screen and (max-width: 1272px) {
-  .inner-works {
-    flex-direction: column;
-  }
-  .header-work > div > img,
-  .footer-work > div > img {
-    height: auto;
-    width: auto;
-  }
-  .inner-left-works > div > img {
-    width: 374px;
-    height: 292px;
-  }
-  .inner-right-works > div > img {
-    width: 374px;
-    height: 292px;
-  }
+.left-imgs > div,
+.right-imgs > div {
+  position: relative;
+}
+@media screen and (max-width: 1242px) {
   .works-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 212px;
+  }
+  .inner-imgs {
+    flex-direction: column;
+  }
+  .left-imgs,
+  .right-imgs {
+    width: 100%;
+    min-height: 293px;
+  }
+  .works-img-container {
+    margin-top: 73px;
   }
 }

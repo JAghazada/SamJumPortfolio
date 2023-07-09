@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Baby Adminnnn</title>
+    <link rel="stylesheet" href="/css/_base.css">
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/project.css">
+</head>
+
+<body>
+    <div class="project-modal">
+        <div class="project-layout">
+            <div class="container-1">
+                <h2>Proyekt Melumatlari</h2>
+                <div class="project-input-container">
+                    <input type="text" placeholder="Proyekt adi" id="p-name" class="project-input">
+                </div>
+                <div class="project-input-container">
+                    <input type="text" placeholder="Proyekt Aç;qlamasi" id="p-description" class="project-input">
+                </div>
+                <div class="project-input-container">
+                    <input type="text" placeholder="Proyekt tag 1" id="tag-1" class="project-input tag">
+                    <input type="text" placeholder="Proyekt tag 2" id="tag-2"" class=" project-input tag">
+                    <input type="text" placeholder="Proyekt tag 3" id="tag-3" class="project-input tag">
+                </div>
+                <div class="project-input-container"><input id="p-link" type="text" placeholder="Proyekt Linki"
+                        class="project-input">
+                </div>
+                <div class="project-btn-container"><button class="btn btn-next btn-next-1">Davam</button></div>
+            </div>
+            <div class="container-2">
+                <h2>Proyekt Melumatlari (Banner IMG)</h2>
+                <div class="project-file-input">
+                    <label class="custom-file-upload">
+                        <input class="upload-banner-img" accept="image/*" type="file" />
+                        Şəkil Yüklə
+                    </label>
+                </div>
+                <div class="banner-img-section">
+
+                </div>
+                <div class="project-btns-container">
+                    <button class="btn btn-back btn-back-2">Əvvələ</button>
+
+                    <button class="btn btn-next btn-next-2">Davam</button>
+                </div>
+
+            </div>
+            <div class="container-3">
+                <h2>Proyekt Melumatlari (Modal IMG)</h2>
+                <div class="project-file-input">
+                    <label class="custom-file-upload">
+                        <input class="upload-modal-img" accept="image/*" type="file" />
+                        Şəkil Yüklə
+                    </label>
+                </div>
+                <div class="modal-img-section">
+
+                </div>
+                <div class="project-btns-container">
+                    <button class="btn btn-back btn-back-3">Əvvələ</button>
+                    <button class="btn btn-next btn-next-3">Davam</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <button class="change-page">Dəyişdir biji</button>
+    <button class="dont-push"><a href="https://mat6tube.com/watch/-214393251_456240745">Basmaaa</a></button>
+    <button class="d-mode" onclick="alert('sen uje cox sey istedin')">DarkMode</button>
+
+
+    <button class="btn add-project">
+        Belke nude atarsan ?
+    </button>
+
+    <h1>Section basliqlari</h1>
+    <div class="d-flex">
+        <input type="text" id="motto" value="<%=pageData.texts.motto%>" placeholder="motto ">
+
+    </div>
+    <div class="d-flex"><input value="<%=pageData.sectionHeaders.about_section%>" placeholder="about" id="about"
+            type="text"></div>
+    <div class="d-flex"><input placeholder="works" value="<%=pageData.sectionHeaders.work_section%>" id="works"
+            type="text"></div>
+    <div class="d-flex"><input placeholder="contact" id="contact" value="<%=pageData.sectionHeaders.contact_section%>"
+            type="text"></div>
+
+
+
+    <h1>Linkler</h1>
+    <div class="d-flex">
+        <h3>basliq => <span>Work</span></h3><input value="<%=pageData.footerHeaders.footer_works%>" type="text"
+            placeholder="Footer Work Sectionu Basligi:..." id="work-w">
+    </div>
+    <div class="d-flex"><input placeholder="behance" value="<%=pageData.social_links.behance%>" id="behance"
+            type="text"><span></span></div>
+    <div class="d-flex"><input placeholder="drible" value="<%=pageData.social_links.drible%>" id="drible"
+            type="text"><span></span></div>
+    <div class="d-flex"><input placeholder="pinterest" value="<%=pageData.social_links.pinterest%>" id="pinterest"
+            type="text"><span></span></div>
+
+    <div class="d-flex">
+        <h3>basliq => <span>Social</span></h3><input value="<%=pageData.footerHeaders.footer_social%>" type="text"
+            placeholder="Footer Social Sectionu Basligi:..." id="social-w">
+    </div>
+    <div class="d-flex"><input placeholder="instagram" value="<%=pageData.social_links.instagram%>" id="instagram"
+            type="text"><span></span></div>
+    <div class="d-flex"><input placeholder="linkedin" value="<%=pageData.social_links.linkedin%>" id="linkedin"
+            type="text"><span></span></div>
+    <div class="d-flex"><input placeholder="facebook" value="<%=pageData.social_links.facebook%>" id="facebook"
+            type="text"><span></span></div>
+    <div class="d-flex"><input placeholder="twitter" value="<%=pageData.social_links.twitter%>" id="twitter"
+            type="text"><span></span></div>
+
+
+
+    <div class="d-flex">
+        <h3>basliq => <span>Contact</span></h3><input value="<%=pageData.footerHeaders.footer_contact%>" type="text"
+            placeholder="Footer Contact Sectionu Basligi:..." id="contact-w">
+    </div>
+    <div class="d-flex"><input placeholder="gmail" id="gmail" value="<%=pageData.social_links.gmail%>"
+            type="text"><span></span></div>
+    <div class="d-flex"><input placeholder="phone" id="phone" value="<%=pageData.social_links.phone%>"
+            type="text"><span></span></div>
+    <div class="d-flex"><input placeholder="contact-text" id="contact-text" value="<%=pageData.texts.contact_text%>"
+            type="text"><span></span></div>
+
+
+    <script src="/js/scripts/project-modal.js"></script>
+    <script src="/js/Models/admin/adminModel.js"></script>
+    <script src="/js/Models/admin/adminView.js"></script>
+    <script src="/js/Models/admin/adminController.js"></script>
+
+</body>
+
+</html>

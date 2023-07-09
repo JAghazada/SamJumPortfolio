@@ -2,7 +2,7 @@
 * {
   font-family: "SF Pro Display", sans-serif;
   text-decoration: none;
-  list-style-type: none;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -16,7 +16,7 @@ body {
   background-color: var(--mainBgColor);
 }
 .container {
-  max-width: 1242px;
+  max-width: 1272px;
   margin: 0 auto;
 }
 ::-webkit-scrollbar {
@@ -28,7 +28,12 @@ body {
   font-size: 32px;
   line-height: 100%;
 }
-@media only screen and (max-width: 1272px) {
+@media only screen and (min-width: 1242px) and (max-width: 1272px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 1242px) {
   .header-text {
     font-size: 22px;
   }
@@ -36,4 +41,7 @@ body {
     width: 301px;
     margin: 0 auto;
   }
+}
+.d-flex {
+  display: flex;
 }
