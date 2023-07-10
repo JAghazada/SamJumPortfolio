@@ -21,7 +21,7 @@ const projectSchema = new mongoose.Schema({
         trim: true,
 
     },
-    project_img_link: {
+    projectID: {
         type: String,
         required: true,
         trim: true,

@@ -4,9 +4,17 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 200;
-  display: none;
+  display: flex;
+  opacity: 0;
   justify-content: center;
   align-items: center;
+  transition: 250ms ease-in;
+  visibility: hidden;
+}
+.card-modal.active {
+  opacity: 1;
+  visibility: visible;
+  transition: 250ms ease-in;
 }
 .card-layout {
   width: 910px;
@@ -59,13 +67,16 @@
 button.get-project {
   padding: 22px 28px;
   background-color: transparent;
-  font-size: 17px;
-  color: #fff;
+
   border-radius: 18px;
   border: 2px solid #fff;
   cursor: pointer;
   transition: 250ms ease-in-out;
   outline: none;
+}
+.get-project > a {
+  font-size: 17px;
+  color: #fff;
 }
 
 button.get-project > svg {
@@ -82,8 +93,10 @@ button.get-project > svg {
   color: #2d2d2d;
   transition: 250ms ease-in-out;
 }
+.get-project:hover > a,
 .get-project:hover > svg {
   fill: #2d2d2d;
+  color: #2d2d2d;
   transition: 250ms ease-in-out;
 }
 
