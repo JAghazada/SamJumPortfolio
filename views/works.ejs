@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/_base.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <link rel="stylesheet" href="/css/works.page.css">
+
+    <title>Works</title>
+</head>
+
+<body>
+    <%- include('partials/card.ejs') %>
+        <nav>
+            <header>
+                <a href="/">Home</a>
+            </header>
+        </nav>
+        <main>
+            <%works.map(work=>{%>
+                <div class="work-card" data-id="<%=work.projectID%>">
+                    <div class="w-100 el-center">
+                        <img class="work-img" src="/uploads/<%=work.projectID%>_banner.img" alt="">
+                    </div>
+                    <div class="work-name">
+                        <%=work.project_name%>
+                    </div>
+                </div>
+
+                <%})%>
+
+        </main>
+        <div class="copyright container">
+            ©2023 Samir Jumshudzada. All Rights Reserved.
+        </div>
+        <script>
+            const works = '<%- JSON.stringify(works) %>'
+        </script>
+        <script src="/js/scripts/detailed-works.js"></script>
+</body>
+
+</html>

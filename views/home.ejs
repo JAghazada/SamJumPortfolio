@@ -16,9 +16,14 @@
 </head>
 
 <body>
+    <div class="popup">
+        Mesaj Göndərildi
+    </div>
     <!-- ! include card modal -->
     <%- include('partials/card.ejs') %>
-
+        <div id="works-inp">
+            <input type="text" value="<%=works%>">
+        </div>
         <!-- ! header start -->
         <!-- ? side-navbar -->
         <div class="side-bar-icon">
@@ -110,43 +115,55 @@
             </section>
             <div class="works-img-container">
                 <div class="header-img">
-                    <button class="view-details-btn">View Details</button>
+                    <button class="view-details-btn" data-id="<%=works[4].projectID%>">View Details</button>
                     <img src="/images/projects/project-1.png" alt="project-image">
 
                 </div>
                 <div class="inner-imgs">
                     <div class="left-imgs">
                         <div>
-                            <button class="view-details-btn">View Details</button>
+                            <button class="view-details-btn" data-id="<%=works[6].projectID%>">View Details</button>
                             <img src="/images/projects/project-3.png" alt="project-image">
                         </div>
                         <div>
-                            <button class="view-details-btn">View Details</button>
+                            <button class="view-details-btn" data-id="<%=works[5].projectID%>">View Details</button>
                             <img src="/images/projects/project-2.png" alt="project-image">
                         </div>
                     </div>
                     <div class="right-imgs">
                         <div>
-                            <button class="view-details-btn">View Details</button>
+                            <button class="view-details-btn" data-id="<%=works[3].projectID%>">View Details</button>
                             <img src="/images/projects/project-4.png" alt="project-image">
                         </div>
                         <div>
-                            <button class="view-details-btn">View Details</button>
+                            <button class="view-details-btn" data-id="<%=works[1].projectID%>">View Details</button>
                             <img src="/images/projects/project-5.png" alt="project-image">
                         </div>
                         <div>
-                            <button class="view-details-btn">View Details</button>
+                            <button class="view-details-btn" data-id="<%=works[2].projectID%>">View Details</button>
                             <img src="/images/projects/project-6.png" alt="project-image">
                         </div>
 
                     </div>
                 </div>
                 <div class="footer-img">
-                    <button class="view-details-btn">View Details</button>
+                    <button class="view-details-btn" data-id="<%=works[0].projectID%>">View Details</button>
                     <img src="/images/projects/project-7.png" alt="project-image">
 
                 </div>
             </div>
+        </div>
+        <div class="w-100 el-center">
+            <button class="btn show-more-btn">
+                <a href="/works">Show more
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.170898 7.09131C0.170898 6.65967 0.469727 6.35254 0.901367 6.35254L11.8335 6.35254L13.6016 6.41064L10.8789 3.92871L9.01953 2.03613C8.88672 1.90332 8.82031 1.7124 8.82031 1.51318C8.82031 1.09814 9.13574 0.799316 9.54248 0.799316C9.7417 0.799316 9.91602 0.865723 10.082 1.02344L15.6021 6.53516C15.7681 6.69287 15.8511 6.88379 15.8511 7.09131C15.8511 7.29883 15.7681 7.48975 15.6021 7.64746L10.082 13.1509C9.91602 13.3086 9.7417 13.3833 9.54248 13.3833C9.13574 13.3833 8.82031 13.0845 8.82031 12.6694C8.82031 12.4702 8.88672 12.271 9.01953 12.1465L10.8789 10.2539L13.6099 7.76367L11.8335 7.83008L0.901367 7.83008C0.469727 7.83008 0.170898 7.52295 0.170898 7.09131Z"
+                            fill="" fill-opacity="0.87" />
+                </a>
+                </svg>
+
+            </button>
         </div>
         <!-- !Works end  -->
         <!-- !Contact start  -->
@@ -233,6 +250,13 @@
         <script src="/js/scripts/changeImg.js"></script>
         <script src="/js/scripts/side-bar.js"></script>
         <script src="/js/scripts/nav-scroll.js"></script>
+
+        <script>
+            const works = '<%- JSON.stringify(works) %>'
+        </script>
+
+        <script src="/js/scripts/about-projects.js"></script>
+        <script src="/js/scripts/send-mail.js"></script>
 
 </body>
 

@@ -45,3 +45,14 @@ body {
 .d-flex {
   display: flex;
 }
+#works-inp {
+  display: none;
+}
+.w-100 {
+  width: 100%;
+}
+.el-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
