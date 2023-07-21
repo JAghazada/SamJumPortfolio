@@ -227,9 +227,13 @@
                         <%=pageData.footerHeaders.footer_contact%>
                             <ul id="footer-menu">
                                 <li class="footer-item"><i class="fa-regular fa-envelope"></i>
-                                    <%=pageData.social_links.gmail%>
+                                    <a id="mailLink" href="mailto: <%=pageData.social_links.gmail%>">
+                                        <%=pageData.social_links.gmail%>
+                                    </a>
+
                                 </li>
-                                <li class="footer-item"><i class="fa-solid fa-phone-volume"></i>
+                                <li class="footer-item coolsamjumphoto"><i
+                                        class="fa-solid fa-phone-volume call-bestcoolsamjum"></i>
                                     <%=pageData.social_links.phone%>
                                 </li>
                                 <li class="footer-item">
@@ -260,6 +264,8 @@
         <script src="/js/scripts/about-projects.js"></script>
         <script src="/js/scripts/send-mail.js"></script>
         <script src="/js/scripts/img.script.js"></script>
+        <script src="/js/scripts/footer.script.js"></script>
+
 
 
 </body>
