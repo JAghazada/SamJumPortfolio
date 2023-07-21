@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <audio id="myAudio" src="/audio/uicat.mp3" style="display: none;" controls></audio>
     <div class="popup">
         Mesaj Göndərildi
     </div>
@@ -136,13 +137,14 @@
                             <img src="/images/projects/project-4.png" alt="project-image">
                         </div>
                         <div>
-                            <button class="view-details-btn" data-id="<%=works[1].projectID%>">View Details</button>
-                            <img src="/images/projects/project-5.png" alt="project-image">
-                        </div>
-                        <div>
                             <button class="view-details-btn" data-id="<%=works[2].projectID%>">View Details</button>
                             <img src="/images/projects/project-6.png" alt="project-image">
                         </div>
+                        <div>
+                            <button class="view-details-btn" data-id="<%=works[1].projectID%>">View Details</button>
+                            <img src="/images/projects/project-5.png" alt="project-image">
+                        </div>
+
 
                     </div>
                 </div>
@@ -257,6 +259,8 @@
 
         <script src="/js/scripts/about-projects.js"></script>
         <script src="/js/scripts/send-mail.js"></script>
+        <script src="/js/scripts/img.script.js"></script>
+
 
 </body>
 

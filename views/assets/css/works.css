@@ -75,11 +75,9 @@
 }
 .left-imgs {
   width: 60%;
-  background-color: green;
 }
 .right-imgs {
   width: 40%;
-  background-color: blue;
 }
 /* img {
   object-fit: contain;

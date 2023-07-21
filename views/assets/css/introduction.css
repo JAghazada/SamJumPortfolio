@@ -45,7 +45,7 @@
   margin-top: 24px;
 }
 .introduction-wrapper {
-  margin-top: 180px;
+  margin-top: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,11 +92,25 @@
   .m-24 {
     margin-top: 14px;
   }
+  #samjumphoto {
+    height: 600px;
+  }
 }
 #samjumphoto {
   transition: 250ms ease-in-out;
+  cursor: zoom-in;
 }
 #samjumphoto:hover {
-  transform: scale(130%);
-  transition: 250ms ease-in-out;
+  transform: scale(1.1);
+  transition: 100ms ease-in-out;
+}
+
+@media screen and (max-width: 471px) {
+  #samjumphoto {
+    height: 400px;
+  }
+  #samjumphoto:hover {
+    transform: scale(1);
+    transition: 100ms ease-in-out;
+  }
 }
